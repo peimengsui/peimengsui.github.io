@@ -7,13 +7,13 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Mengqi (Mandy) Xia"
+title                    : "Peimeng Sui"
 title_separator          : "-"
-name                     : &name "Mengqi (Mandy) Xia"
+name                     : &name "Peimeng Sui"
 description              : &description ""
-url                      : https://mandyxmq.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://peimengsui.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "mandyxmq/mandyxmq.github.io"
+repository               : "peimengsui/peimengsui.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
@@ -80,9 +80,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "Mengqi (Mandy) Xia"
+  name             : "Peimeng Sui"
   avatar           : "profile.png"
-  bio              : "Cornell Computer Science Ph.D. Student"
+  bio              : "Machine Learning Scientist at TripAdvisor"
   location         : 
   employer         :
   pubmed           : 
@@ -238,7 +238,7 @@ sass:
 permalink: /:categories/:title/
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
-timezone: America/Los_Angeles # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: America/New_York # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins

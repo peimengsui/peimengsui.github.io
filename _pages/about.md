@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I'm a Computer Science Ph.D. student at Cornell University. My advisor is [Steve Marschner](http://www.cs.cornell.edu/~srm/). My research interest is in Computer Graphics, primarily in Physically-based Rendering. Before coming to Cornell, I got my Bachelor of Science in Applied Mathematics from University of California, Los Angeles (UCLA).
+I am a machine learning scientist at TripAdvisor. I started my career at TripAdvisor as a summer intern in 2017 and joined as a full-time machine learning scientist in 2018. During my journey at TripAdvisor, I have been working on various projects related to recommendation, personalization, machine vision and ranking algorithms. Before joining TripAdvisor, I got my Master of Science in Data Science degree from New York University Center for Data Science  and Bachelor of Science in Applied Mathematics and Statistics degree from University of California, Los Angeles.
 
 Publications 
 ======

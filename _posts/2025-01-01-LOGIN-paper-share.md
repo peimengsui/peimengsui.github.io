@@ -56,4 +56,42 @@ The LLM predicted pseudo labels and the corresponding explanations are used two 
 After the LLM response feedback stage, LOGIN is set to retrain GNN. This process can be iteratively repeated until the maximum number of iterations is reached or the performance of the GNN has achieved an acceptable level.
 
 ---
+### Experiment Results
+One can refer the original paper for detailed results. Here are a summary of key research question results.
+
+1. Does the LOGIN framework achieve performance comparable to state-of-the-art GNNs?
+
+LOGIN consistently outperforms the vanilla baselines trained with the original node features or the LM-finetuned node embeddings in most cases. LOGIN can attain performance comparable to that of advanced GNNs by training fundamental models within the LOGIN framework. 
+
+2. How does the complementary coping mechanism for LLMs’ responses contribute to the LOGIN framework?
+
+The feature update enhances prediction accuracy more effectively for a homophilic graph. Regarding the structure refinement component, LOGIN without edge pruning exhibits a significant performance decrease compared to the models with the complete coping mechanism. This observation aligns with our intuition, as in heterophilic graphs, the principal challenge for conventional GNNs in achieving generalization stems from the distinctiveness of their structural characteristics.
+
+3. How does LOGIN operate over specific nodes based on responses from LLMs?
+
+Section 6.4 shows a case study on two nodes, initially recognized as uncertain nodes and misclassified by a pre-trained GNN. Through interaction with an LLM, the operation of feature enhancement or structure refinement is correspondingly conducted, thereby in turn helping the GNN make
+the right prediction.
+
+4. Can consulting more advanced LLMs in LOGIN unlock greater potential?
+
+The employment
+of a more advanced LLM within LOGIN framework indeed facilitates performance increase. This underscores the significant potential of the LLMs-as-Consultants paradigm when equipped with more powerful LLMs.
+
+5. How do models under the LLMs-as-Consultants paradigm perform compared with LLMs-as-Predictors and LLMs-as-Enhancers?
+
+The LLMs-as-Consultants paradigm demonstrates greater compatibility with lower time and resource consumption.
+
+6. Can consulting LLMs with more training nodes achieve higher performance increases with classic GNNs?
+
+Our findings demonstrate that incorporating more nodes in the consultation process with LLMs can lead to significant performance improvements.
+
+7. Can LOGIN also help advanced GNNs enhance performance?
+
+LOGIN is generally effective and not limited to improving specific types of GNNs, demonstrating its potential as a general solution for boosting various types of GNNs.
+
+---
+
+### After Thoughts
+
+As LLM becomes the most popular research topic in machine learning, more and more emerging capabilities are being discovered. It is very nice to see a successful application of LLMs in Graph Neural Networks, a domain previously requiring extensive manual experimentation for model evolution. This paper mainly leverages LLMs as guiding models to augment text features with LLMs' explanations or prune nodes in which LLMs classification results differ from the ground truth. The results demonstrate the capability of LLMs on node classifications, which were challenging for the initially trained basic GNN models. The iterative retraining framework demonstrates significant improvements compared to other baselines, an even more advanced GNN model trained without guidance from LLMs. I am interested in following any future work in LLMs <> GNN integrations, e.g., on more tasks, datasets, and larger-scale problems. 
 

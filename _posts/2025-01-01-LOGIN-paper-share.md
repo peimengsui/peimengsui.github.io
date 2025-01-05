@@ -18,7 +18,7 @@ Graph-structured data commonly exists in many fields, such as social networks, f
 #### LLMS-AS-CONSULTANTS PARADIGM
 Existing research on integrating LLM with graphs can be categorized into either LLMs-as-Predictors, which harnesses the zero/few-shot capability of LLMs to predict node labels directly, or LLMs-as-Enhancers, which applies instruction/prefix tuning to adapt LLMs specifically for graph tasks. In contrast, this paper introduces a new paradigm, LLMs-as-Consultants, where LLMs provide valuable insights influencing the GNNs learnings.
 
-![Figure 1: The paradigms for integrating LLMs with graphs.](URL)
+<img width="638" alt="Screen Shot 2025-01-04 at 4 11 05 PM" src="https://github.com/user-attachments/assets/b40506fb-73f1-44a3-96c7-f1c5dad7a958" />
 
 >**Note:** This paper assumes some standard procedures for Graph data, e.g., nodes are attributed by text, homophily metrics, and GNNs operations, e.g., AGGREGATED and UPDATE. And it focuses on the problem of node classification, formulated as:
 
@@ -28,7 +28,8 @@ One can refer to Section 4 of the original paper.
 
 #### LOGIN in details
 
-![Figure 2: The pipeline of LOGIN.](URL)
+<img width="791" alt="Screen Shot 2025-01-04 at 4 33 50 PM" src="https://github.com/user-attachments/assets/e1052756-fb68-4b1b-916a-3cc46f3a89d3" />
+
 
 The pipeline of LOGIN can be summarized into 4 steps:
 1. Node Selection Based on Uncertainty

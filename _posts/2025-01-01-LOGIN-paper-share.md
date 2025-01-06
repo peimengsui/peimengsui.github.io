@@ -32,26 +32,17 @@ One can refer to Section 4 of the original paper.
 
 
 The pipeline of LOGIN can be summarized into 4 steps:
-1. Node Selection Based on Uncertainty
-
+1. Node Selection Based on Uncertainty:
 Given a graph dataset with an initially trained GNN, a Bayesian estimation of node uncertainty is obtained. Specifically, the GNN is trained with dropout, and each node's predicted score variance during inference is used.
-
-2. Prompt Construction
-
+2. Prompt Construction:
 As shown as a general example in Figure 2 and detailed in Appendix A, the prompt includes instructions explaining the node classification task, the input data including target node, text, two-hop neighborhood descriptions, neighbor labels, and the output format indicator. The output in JSON format is prompted to include the most probable classification outcome along with its explanation.
-
-3. LLM Consultation
-
+3. LLM Consultation:
 LLM consultation is in a zero-shot node-by-node manner, i.e., constructing a single prompt for each uncertain node without classification examples provided.
+4. LLM Response Feedback:
+The LLM predicted pseudo labels and the corresponding explanations are used two ways after comparing against the ground truth labels.
 
-4. LLM Response Feedback
-
-The LLM predicted pseudo labels and the corresponding explanations are used two ways after comparing against the ground truth labels. 
-
-  a. When LLM is current, append the explanation parsed from the LLM response to its original text and attain the new node embedding.
-
-  b. When LLM is wrong, prune edges based on node similarity scores to denoise the local structure.
-
+   a. When LLM is current, append the explanation parsed from the LLM response to its original text and attain the new node embedding.
+   b. When LLM is wrong, prune edges based on node similarity scores to denoise the local structure.
 
 After the LLM response feedback stage, LOGIN is set to retrain GNN. This process can be iteratively repeated until the maximum number of iterations is reached or the performance of the GNN has achieved an acceptable level.
 
@@ -60,33 +51,20 @@ After the LLM response feedback stage, LOGIN is set to retrain GNN. This process
 One can refer the original paper for detailed results. Here are a summary of key research question results.
 
 1. Does the LOGIN framework achieve performance comparable to state-of-the-art GNNs?
-
 LOGIN consistently outperforms the vanilla baselines trained with the original node features or the LM-finetuned node embeddings in most cases. LOGIN can attain performance comparable to that of advanced GNNs by training fundamental models within the LOGIN framework. 
-
 2. How does the complementary coping mechanism for LLMs’ responses contribute to the LOGIN framework?
-
 The feature update enhances prediction accuracy more effectively for a homophilic graph. Regarding the structure refinement component, LOGIN without edge pruning exhibits a significant performance decrease compared to the models with the complete coping mechanism. This observation aligns with our intuition, as in heterophilic graphs, the principal challenge for conventional GNNs in achieving generalization stems from the distinctiveness of their structural characteristics.
-
 3. How does LOGIN operate over specific nodes based on responses from LLMs?
-
 Section 6.4 shows a case study on two nodes, initially recognized as uncertain nodes and misclassified by a pre-trained GNN. Through interaction with an LLM, the operation of feature enhancement or structure refinement is correspondingly conducted, thereby in turn helping the GNN make
 the right prediction.
-
 4. Can consulting more advanced LLMs in LOGIN unlock greater potential?
-
 The employment
 of a more advanced LLM within LOGIN framework indeed facilitates performance increase. This underscores the significant potential of the LLMs-as-Consultants paradigm when equipped with more powerful LLMs.
-
 5. How do models under the LLMs-as-Consultants paradigm perform compared with LLMs-as-Predictors and LLMs-as-Enhancers?
-
 The LLMs-as-Consultants paradigm demonstrates greater compatibility with lower time and resource consumption.
-
 6. Can consulting LLMs with more training nodes achieve higher performance increases with classic GNNs?
-
 Our findings demonstrate that incorporating more nodes in the consultation process with LLMs can lead to significant performance improvements.
-
 7. Can LOGIN also help advanced GNNs enhance performance?
-
 LOGIN is generally effective and not limited to improving specific types of GNNs, demonstrating its potential as a general solution for boosting various types of GNNs.
 
 ---

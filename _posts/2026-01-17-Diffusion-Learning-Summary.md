@@ -13,6 +13,11 @@ Beyond theory, there is also the challenge of turning conceptual understanding i
 ---
 ### Theory and Mathematical Foundations
 
+When I first started to learn about diffusion models, I began with reading the foundational academic papers directly. However, I got lost in them quickly and could not figure out common things among them myself. Then I took a step back and tried to find some resources with a higher level of abstraction of this actively developing sub field of machine leanring and generative modeling. Here are a few resources I would recommend for laying out mathematical foundations about diffusion models.
+
+#### MIT Course 6.S184: Introduction to Flow Matching and Diffusion Models
+
+
 ---
 ### From Equations to Code: Hands-on Implementation
 

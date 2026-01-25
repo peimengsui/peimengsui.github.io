@@ -46,7 +46,7 @@ With a comprehensive understanding of the mathematical foundations, it is always
 - [Adding Conditional Control to Text-to-Image Diffusion Models](https://arxiv.org/pdf/2302.05543) ControlNet
 - [Scalable Diffusion Models with Transformers](https://arxiv.org/abs/2212.09748) Based on Latent Diffusion, UNet -> ViT
 variants of standard transformer blocks that incorporate conditioning via adaptive layer norm, cross-attention, and extra input tokens. Adaptive layer norm works best. H-params: patch size, transformer block architecture, model size.
-- [Classifier-Free Diffusion Guidance] (https://arxiv.org/abs/2207.12598) Classifier-Free Guidance: jointly train a conditional and an unconditional diffusion model, and we combine the resulting conditional and unconditional score estimates to attain a trade-off between sample quality and diversity.
+- [Classifier-Free Diffusion Guidance](https://arxiv.org/abs/2207.12598) Classifier-Free Guidance: jointly train a conditional and an unconditional diffusion model, and we combine the resulting conditional and unconditional score estimates to attain a trade-off between sample quality and diversity.
 - [Consistency Models](https://arxiv.org/pdf/2303.01469) self-consistency: points on the same trajectory map to the same initial point.
 - [Diffusion Meets Flow Matching: Two Sides of the Same Coin](https://diffusionflow.github.io/) Finally, there is this blog post by Google DeepMind team, trying to demystify some common misunderstandings or confusions about Flow Matching vs Diffusion. This blog post can be a good wrap-up of your learning journey and publications, with a clear summary of related work comparisons. 
 ---

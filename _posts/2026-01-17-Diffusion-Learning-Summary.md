@@ -6,7 +6,7 @@ tags: []
 ---
 
 ## Resources to Learn Diffusion Models: From Theory to Practice
-Diffusion models are everywhere today, powering many of the most exciting image and video generation systems. There is an abundance of papers, blog posts, and codebases available, but getting started isn’t always straightforward. Personally, I found that reading academic diffusion papers early on can be intimidating without a strong foundation in the underlying math.
+Diffusion models are everywhere today, powering many of the most exciting image and video generation systems. There are plenty of papers, blog posts, and codebases available, but getting started isn’t always straightforward. Personally, I found that reading academic diffusion papers early on can be intimidating without a strong foundation in the underlying math.
 
 Beyond theory, there is also the challenge of turning conceptual understanding into working code and concrete applications. In this post, I share a curated set of learning resources and practical tips based on my own learning path, which helped me build intuition from first principles and eventually complete a small, hands-on project.
 
@@ -18,7 +18,7 @@ Below are several resources that I found especially helpful for building a solid
 
 #### MIT Course 6.S184: Introduction to Flow Matching and Diffusion Models
 
-
+I especially like the multi-modality of this course. 
 ---
 ### From Equations to Code: Hands-on Implementation
 

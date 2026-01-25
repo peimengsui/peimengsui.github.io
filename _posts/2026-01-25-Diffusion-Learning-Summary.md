@@ -51,5 +51,20 @@ variants of standard transformer blocks that incorporate conditioning via adapti
 - [Diffusion Meets Flow Matching: Two Sides of the Same Coin](https://diffusionflow.github.io/) Finally, there is this blog post by Google DeepMind team, trying to demystify some common misunderstandings or confusions about Flow Matching vs Diffusion. This blog post can be a good wrap-up of your learning journey and publications, with a clear summary of related work comparisons. 
 ---
 ### From Equations to Code: Hands-on Implementation
+#### Hugging Face Diffusion Models Course
+
+Link: https://huggingface.co/learn/diffusion-course/en/unit0/1
+
+One of the most practical resources I found for bridging the gap between equations and real implementations is the Hugging Face Diffusion Course
+. This free, community-driven course walks you through how diffusion models work in practice, using clean, modern tooling from the 🤗 Diffusers library. It’s organized into units that each pair conceptual overviews with executable notebooks — for example, you’ll find an Introduction to Diffusers notebook plus a Diffusion Models from Scratch notebook that shows how key components like noise schedules, UNet models, and sampling loops translate into working PyTorch code. The hands-on structure helps you move from understanding the underlying math to actually training and sampling your own models, whether you’re exploring toy datasets or building out more sophisticated pipelines.
+
+What I like most about this course is how it balances theory and practice: each unit combines a gentle conceptual introduction with runnable code, so you can reinforce your intuition by experimenting directly with models. Later units build on these foundations to cover fine-tuning, guidance techniques, and even applications like text-conditioned Stable Diffusion, giving you a clear path from simple training loops to more advanced generative workflows. If you go through the accompanying notebooks and tweak the code yourself, you’ll come away with a much stronger understanding of how diffusion models are actually implemented in real research and production settings.
+
+---
+
+### Closing Thoughts
+Learning diffusion models can feel overwhelming at first, given the mathematical depth and the rapidly evolving landscape of research and tooling. For me, combining solid theoretical foundations with hands-on experimentation was the key to building real intuition and confidence. The resources collected in this post reflect the path that helped me move from reading equations to writing working code.
+
+I am currently exploring a small image and video generation project using what I have learned so far. In a future post, I hope to share the outcomes, implementation details, and lessons learned from this practical experience. Hopefully, these notes will also be helpful for others who are beginning their own journey into diffusion models.
 
 ---

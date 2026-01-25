@@ -18,7 +18,7 @@ Below are several resources that I found especially helpful for building a solid
 
 #### MIT Course 6.S184: Introduction to Flow Matching and Diffusion Models
 
-Link: https://diffusion.csail.mit.edu/2025/index.html
+[Link](https://diffusion.csail.mit.edu/2025/index.html)
 
 This is the best course I’ve found so far for building a rigorous mathematical foundation in modern flow-matching and diffusion models for image and video generation. Starting with ODEs and SDEs, the course provides a step-by-step introduction to the core components of these models, including training target construction, optimization procedures, and inference algorithms for simulating both stochastic and deterministic dynamics.
 
@@ -30,9 +30,9 @@ What I especially appreciate is the course's “multi-modal” resources. Peter�
 
 Beyond generative modeling, the channel also covers many other areas of AI, and I highly encourage readers to explore additional content based on their own interests.
 
-【DALL·E 2（内含扩散模型介绍）【论文精读】】 https://www.bilibili.com/video/BV17r4y1u77B/?share_source=copy_web
+[DALL·E 2（内含扩散模型介绍）【论文精读】](https://www.bilibili.com/video/BV17r4y1u77B/?share_source=copy_web)
 
-【视频生成·上【论文精读·55】】 https://www.bilibili.com/video/BV1VdcxesEAt/?share_source=copy_web
+[视频生成·上【论文精读·55】](https://www.bilibili.com/video/BV1VdcxesEAt/?share_source=copy_web)
 
 #### Major Publications
 
@@ -48,12 +48,13 @@ With a comprehensive understanding of the mathematical foundations, it is always
 variants of standard transformer blocks that incorporate conditioning via adaptive layer norm, cross-attention, and extra input tokens. Adaptive layer norm works best. H-params: patch size, transformer block architecture, model size.
 - [Classifier-Free Diffusion Guidance](https://arxiv.org/abs/2207.12598) Classifier-Free Guidance: jointly train a conditional and an unconditional diffusion model, and we combine the resulting conditional and unconditional score estimates to attain a trade-off between sample quality and diversity.
 - [Consistency Models](https://arxiv.org/pdf/2303.01469) self-consistency: points on the same trajectory map to the same initial point.
-- [Diffusion Meets Flow Matching: Two Sides of the Same Coin](https://diffusionflow.github.io/) Finally, there is this blog post by Google DeepMind team, trying to demystify some common misunderstandings or confusions about Flow Matching vs Diffusion. This blog post can be a good wrap-up of your learning journey and publications, with a clear summary of related work comparisons. 
+- [Diffusion Meets Flow Matching: Two Sides of the Same Coin](https://diffusionflow.github.io/) Finally, there is this blog post by Google DeepMind team, trying to demystify some common misunderstandings or confusions about Flow Matching vs Diffusion. This blog post can serve as a good wrap-up of your learning journey and publications, with a clear summary of related work and comparisons. 
+
 ---
 ### From Equations to Code: Hands-on Implementation
 #### Hugging Face Diffusion Models Course
 
-Link: https://huggingface.co/learn/diffusion-course/en/unit0/1
+[Link](https://huggingface.co/learn/diffusion-course/en/unit0/1)
 
 One of the most practical resources I found for bridging the gap between equations and real implementations is the Hugging Face Diffusion Course
 . This free, community-driven course walks you through how diffusion models work in practice, using clean, modern tooling from the 🤗 Diffusers library. It’s organized into units that each pair conceptual overviews with executable notebooks — for example, you’ll find an Introduction to Diffusers notebook plus a Diffusion Models from Scratch notebook that shows how key components like noise schedules, UNet models, and sampling loops translate into working PyTorch code. The hands-on structure helps you move from understanding the underlying math to actually training and sampling your own models, whether you’re exploring toy datasets or building out more sophisticated pipelines.

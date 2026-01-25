@@ -2,7 +2,7 @@
 layout: post
 title: "Resources to Learn Diffusion Models: From Theory to Practice"
 date: 2026-01-25
-tags: []
+tags: ["Self Learning"]
 ---
 
 ## Resources to Learn Diffusion Models: From Theory to Practice

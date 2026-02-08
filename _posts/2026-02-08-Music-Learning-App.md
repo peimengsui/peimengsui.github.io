@@ -25,6 +25,7 @@ My vibe coding setup isn’t the fanciest, but it has worked extremely well for 
 - I started by chatting with GPT to brainstorm ideas and narrow down the first MVP goals. It felt like working with a product partner — iterating quickly on what would be both impactful and realistically achievable.
 
 - Next, I prompted GPT to generate an initial full-stack design document. GPT-5.2 (Auto mode) did a surprisingly strong job outlining the architecture, component choices, and tradeoffs. For parts of the stack that I hadn’t touched much in my day-to-day work, this became a valuable learning process. With enough context and tool-calling ability, GPT can justify decisions clearly and act much like a senior engineer you can bounce ideas off of.
+  ![Music Learning App MVP Architecture](/assets/images/MusicLearningAppArchitecture.png)
 
 - For implementation, I combined GPT with Cursor’s coding agents in Plan mode to create step-by-step execution roadmaps. I intentionally chose an IDE-native agent workflow over purely CLI-based tools (like Claude Code) because I wanted to stay close to the building process and learn from each step—not just generate the final result. Cursor handled most tasks smoothly, and I especially appreciated how it produced lightweight Markdown documentation along the way (for example, how to test new components locally). When something didn’t look right, I could iterate quickly with follow-up prompts and concrete UI/text adjustments.
 
@@ -33,11 +34,17 @@ My vibe coding setup isn’t the fanciest, but it has worked extremely well for 
 ### App Demo
 Imagine a guitar teacher onboarding a new student. The teacher creates a studio, sends an invite, and sets up a lesson series. They upload a warm-up exercise PDF as a material, create a weekly assignment, and then use the AI assistant to draft a lesson plan that aligns with the student's level and focus. After the lesson, the student uploads practice recordings, and the teacher reviews submissions and logs before the next session. The teacher stays in control, the student gets structured guidance, and the entire learning loop becomes visible and actionable.
 
-## What Comes Next
+<video width="720" controls>
+  <source src="/assets/videos/MusicLearningAppDemo.webm" type="video/webm">
+  Your browser does not support the video tag.
+</video>
+
+
+### What Comes Next
 
 The next step is to put this in front of real instructors, collect feedback from a small set of music teachers, and iterate on the core UX. From there, I plan to add more AI-enabled functionality that stays grounded in real teaching workflows, not just generic productivity features.
 
-## Closing Thoughts
+### Closing Thoughts
 
 Vibe coding is not about replacing people. It is about empowering people to create and iterate faster, especially in domains that matter. When software helps educators do their job more effectively, that is a net gain for students, teachers, and communities. I see this project as a small but meaningful step toward democratizing software development and using technology to strengthen education.
 

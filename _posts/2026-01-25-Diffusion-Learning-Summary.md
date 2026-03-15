@@ -3,6 +3,7 @@ layout: post
 title: "Resources to Learn Diffusion Models: From Theory to Practice"
 date: 2026-01-25
 tags: ["Self Learning"]
+description: "Curated resources and tips to learn diffusion models from theory to practice, including MIT 6.S184 and hands-on projects."
 ---
 
 ## Resources to Learn Diffusion Models: From Theory to Practice

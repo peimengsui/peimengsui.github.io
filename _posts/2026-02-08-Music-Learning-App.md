@@ -3,6 +3,7 @@ layout: post
 title: "Building Music Learning App: A Vibe Coding Experience"
 date: 2026-02-08
 tags: ["Hobby Projects"]
+description: "How I built a teacher-first music learning platform using vibe coding — from idea to MVP with GPT and Cursor."
 ---
 
 ## Building Music Learning App: A Vibe Coding Experience

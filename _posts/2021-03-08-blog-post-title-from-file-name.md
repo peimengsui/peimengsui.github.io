@@ -1,6 +1,8 @@
 ---
+layout: post
 title: Initial Template Blog
 published: false
+description: "Sample blog post demonstrating Jekyll titles-from-headings and code highlighting."
 ---
 
 ## Blog Post Title From First Header

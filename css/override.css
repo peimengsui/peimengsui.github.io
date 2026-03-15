@@ -3,6 +3,15 @@ hr {
   margin-bottom: 20px;
 }
 
+/* Homepage profile photo */
+.profile-photo {
+  margin-bottom: 1.5em;
+}
+.profile-photo img {
+  border-radius: 8px;
+  display: block;
+}
+
 /* Post navigation links */
 .post_navi {
   display: flex;

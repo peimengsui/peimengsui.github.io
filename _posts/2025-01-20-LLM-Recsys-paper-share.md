@@ -3,6 +3,7 @@ layout: post
 title: "Paper Share: LLM Applications in Recommender Systems"
 date: 2025-01-20
 tags: ["Paper Share"]
+description: "Paper summaries from WSDM 2025 on LLM applications in recommender systems: cold start, explainability, diversity, and conversational recommendations."
 ---
 
 # Paper Share: LLM Applications in Recommender Systems

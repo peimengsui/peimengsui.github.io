@@ -3,6 +3,7 @@ layout: post
 title: "Paper Share: `LOGIN: A Large Language Model Consulted Graph Neural Network Training Framework`"
 date: 2025-01-01
 tags: ["Paper Share"]
+description: "Paper share: LOGIN — a framework that uses LLMs as consultants to improve GNN training for node classification."
 ---
 
 ## Paper Share: `LOGIN: A Large Language Model Consulted Graph Neural Network Training Framework`

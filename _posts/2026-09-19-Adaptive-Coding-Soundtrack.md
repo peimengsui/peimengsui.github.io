@@ -52,30 +52,14 @@ In day-to-day use, the extension is mostly invisible, which is the point. A few 
 
 ### What a Session Looks Like
 
-The clearest way to understand the extension is to watch the status bar during an ordinary hour of agent-assisted work. A single Jazz session, from the first keystroke to walking away, reads roughly like this:
+A normal session is quieter than a state diagram. In this short Cursor clip, the player begins in **Reviewing**, follows a couple of edits into **Human Flow**, recognizes a terminal command as **Executing**, and moves to **Waiting** when the command remains active. The same cached ElevenLabs Ambient track continues underneath the whole time: there is no restart, no crossfade, and no new API call.
 
-```text
-♫ Jazz · Human Flow              typing in one file
-♫ Jazz · Deep Focus              sustained editing; the sequence opens up and settles
-♫ Jazz · Agent Working           a fast edit burst lands across four files
-♫ Jazz · Human Review Handoff    clicking through the resulting diff
-♫ Jazz · Executing               a test task starts
-♫ Jazz · Waiting                 editing pauses while the run continues
-♫ Jazz · Completed               one short cue over the arrangement
-♫ Jazz · Needs Attention         ...or that, if the run failed instead
-♫ Jazz · Idle · Auto-paused      two minutes with nothing happening
-```
-
-The important detail is what does *not* happen between those lines. It is one continuous piece of music the whole way down. Nothing restarts, nothing fades out and back in, and the completion cue plays over the arrangement rather than replacing it. Hovering the status item at any point tells you the phase, the likely actor, both confidence numbers, and which signals produced the label.
-
-<!-- TODO: record a short Cursor demo and embed it here.
-
-<video width="720" controls>
+<video width="720" controls playsinline preload="metadata">
   <source src="/assets/videos/AdaptiveCodingSoundtrackDemo.webm" type="video/webm">
-  Your browser does not support the video tag.
+  Your browser does not support embedded video. <a href="/assets/videos/AdaptiveCodingSoundtrackDemo.webm">Download the demo instead.</a>
 </video>
 
--->
+The audio in the recording is the actual cached track used by the session, mixed slightly lower for the screen capture. The status badge is the useful part to watch: it shows what the extension inferred without exposing source text, terminal output, or the contents of the command to the context engine.
 
 ### Building It Entirely with Codex
 

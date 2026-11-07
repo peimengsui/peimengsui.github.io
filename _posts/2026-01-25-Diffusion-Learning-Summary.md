@@ -1,5 +1,6 @@
 ---
 layout: post
+comment_issue: 3
 title: "Resources to Learn Diffusion Models: From Theory to Practice"
 date: 2026-01-25
 tags: ["Self Learning"]

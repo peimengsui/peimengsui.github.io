@@ -1,5 +1,6 @@
 ---
 layout: post
+comment_issue: 2
 title: "Paper Share: LLM Applications in Recommender Systems"
 date: 2025-01-20
 tags: ["Paper Share"]

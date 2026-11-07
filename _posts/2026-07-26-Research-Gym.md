@@ -1,5 +1,6 @@
 ---
 layout: post
+comment_issue: 5
 title: "Building ResearchGym: Learning Modern ML by Reimplementing It"
 date: 2026-07-26
 tags: ["Hobby Projects", "Machine Learning", "Open Source"]

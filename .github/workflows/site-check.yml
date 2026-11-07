@@ -1,0 +1,29 @@
+name: Validate site
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      JEKYLL_ENV: production
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3'
+          bundler-cache: true
+      - run: bundle exec jekyll build --strict_front_matter --trace
+      - run: python3 scripts/verify_site.py
+      - run: node --check js/comments.js
+      - uses: actions/upload-artifact@v4
+        with:
+          name: built-site
+          path: _site
+          retention-days: 7

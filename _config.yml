@@ -4,6 +4,16 @@ description: "Personal site of Peimeng Sui — ML engineer. Technical posts, pro
 url: "https://peimengsui.github.io"
 baseurl: ""
 
+comments:
+  repository: "peimengsui/peimengsui.github.io"
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - scripts
+  - tests
+  - vendor
+
 # Email / Social media user names used by the minima theme:
 # All of these are optional and can be removed or commented out
 email: "peimengsui@mail.com"
@@ -38,6 +48,6 @@ titles_from_headings:
 defaults:
   - scope:
       path: ""
-      type: post
+      type: posts
     values:
       tags: Other

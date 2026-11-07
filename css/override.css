@@ -45,6 +45,42 @@ hr {
   right: 0;
 }
 
+/* GitHub-backed comments on every published post. */
+.post-comments {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #ddd;
+}
+.comment-button {
+  display: inline-block;
+  padding: .55rem .9rem;
+  color: #fff;
+  background: #245f9c;
+  border-radius: 6px;
+  font-weight: 600;
+}
+.comment-button:visited { color: #fff; }
+.comment-button:hover, .comment-button:focus {
+  color: #fff;
+  background: #174573;
+}
+.comments-note, .comments-status, .comment-meta {
+  font-size: .9rem;
+  color: #626262;
+}
+.comment-card {
+  margin: 1rem 0;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+.comment-meta { margin-bottom: .6rem; }
+.comment-body {
+  margin-bottom: 0;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
 .post_navi .post_navi-arrow {
   position: absolute;
   top: 50%;

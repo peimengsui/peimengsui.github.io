@@ -1,0 +1,15 @@
+{% if site.comments.repository and page.comment_issue and page.comments != false %}
+{% assign thread_url = 'https://github.com/' | append: site.comments.repository | append: '/issues/' | append: page.comment_issue %}
+<section class="post-comments" aria-labelledby="comments-heading"
+         data-comments-repository="{{ site.comments.repository | escape }}"
+         data-comments-issue="{{ page.comment_issue }}">
+  <h2 id="comments-heading">Comments</h2>
+  <p>Questions, feedback, or ideas? Join the conversation on GitHub.</p>
+  <p><a class="comment-button" href="{{ thread_url }}#new_comment_field" target="_blank" rel="noopener noreferrer">Comment on GitHub</a></p>
+  <p class="comments-note">A GitHub account is needed to comment. Comments are public and appear here after refreshing.</p>
+  <p class="comments-status" role="status" hidden></p>
+  <div class="comments-list"></div>
+  <noscript><p><a href="{{ thread_url }}">Read the comments on GitHub.</a></p></noscript>
+</section>
+<script src="{{ '/js/comments.js' | relative_url }}" defer></script>
+{% endif %}

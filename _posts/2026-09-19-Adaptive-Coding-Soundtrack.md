@@ -1,5 +1,6 @@
 ---
 layout: post
+comment_issue: 6
 title: "Adaptive Coding Soundtrack: Music That Follows Your Coding Flow"
 date: 2026-09-19
 tags: ["Hobby Projects", "Open Source"]

@@ -1,5 +1,6 @@
 ---
 layout: post
+comment_issue: 1
 title: "Paper Share: `LOGIN: A Large Language Model Consulted Graph Neural Network Training Framework`"
 date: 2025-01-01
 tags: ["Paper Share"]
